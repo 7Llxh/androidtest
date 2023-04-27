@@ -24,14 +24,14 @@ jobs:
       run: chmod +x GitBook/gradlew
       
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./GitBook/gradlew app:assembleRelease
       
     - name: Run tests with Gradle
-      run: ./gradlew test
+      run: ./GitBook/gradlew test
 
       
     - name: Upload APK
       uses: actions/upload-artifact@v2
       with:
         name: app-debug
-        path: app/build/outputs/apk/debug/app-debug.apk
+        path: GitBook/app/build/outputs/apk/debug/app-debug.apk
