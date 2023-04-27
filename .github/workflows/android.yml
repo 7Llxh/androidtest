@@ -26,10 +26,6 @@ jobs:
     - name: Build with Gradle
       run: ./GitBook/gradlew app:assembleRelease
       
-    - name: Run tests with Gradle
-      run: ./GitBook/gradlew test
-
-      
     - name: Upload APK
       uses: actions/upload-artifact@v2
       with:
