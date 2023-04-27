@@ -21,15 +21,13 @@ jobs:
         cache: gradle
 
     - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
-    - name: Build with Gradle
-      run: ./gradlew app:assembleRelease
+      run: chmod +x GitBook/gradlew
       
-    - name: Upload a Build Artifact
+    - name: Build with Gradle
+      run: ./GitBook/gradlew app:assembleRelease
+      
+    - name: Upload APK
       uses: actions/upload-artifact@v2
       with:
-        name: upload-apk
-        path: |
-          ${{github.workspace}}app/build/outputs/apk/debug/app-debug.apk
-
-      
+        name: app-debug
+        path: GitBook/app/build/outputs/apk/debug/app-debug.apk
