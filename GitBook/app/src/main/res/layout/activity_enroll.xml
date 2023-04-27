@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="#FFF5EE"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false">
+        <TextView
+            android:text="userId"
+            android:textSize="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/enroll_userId"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:maxLines="2"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </EditText>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#C0C0C0"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false">
+        <TextView
+            android:text="password"
+            android:textSize="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <EditText
+            android:id="@+id/enroll_password"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:maxLines="2"
+            tools:ignore="SpeakableTextPresentCheck">
+        </EditText>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_enroll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="22dp"
+            android:background="@drawable/button_drawable2"
+            android:text="Enroll"></Button>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="22dp"
+            android:background="@drawable/button_drawablee"
+            android:text="Back"></Button>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/h_back"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/aabb" />
+
+        <ImageView
+            android:id="@+id/h_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/xiong" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/h_back"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/user_line"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerHorizontal="true"
+                android:background="#F8F6F6"/>
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/user_line"
+                android:textSize="17sp"
+                android:textColor="#F8F4F4"
+                android:text="张三"/>
+
+            <TextView
+                android:id="@+id/user_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@id/user_line"
+                android:text="我是张三"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_ask_mine"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:background="#88D6FA"
+            android:text="消息" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        app:cardBackgroundColor="#6CC8C0"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="20dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false">
+        <TextView
+            android:text="这是个人简介"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btn_change_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="18dp"
+            android:background="@drawable/button_drawablee"
+            android:text="修改信息"></Button>
+        <Button
+            android:id="@+id/btn_change_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="18dp"
+            android:background="@drawable/button_drawablee"
+            android:text="修改头像"></Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/btn_change">
+
+
+        <Button
+            android:id="@+id/btn_read_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="read" />
+
+        <Button
+            android:id="@+id/btn_write_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="write" />
+
+        <Button
+            android:id="@+id/btn_mine_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="mine" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

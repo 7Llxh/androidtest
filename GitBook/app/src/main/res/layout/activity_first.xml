@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/welcome"></ImageView>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="#95A3F1"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="30dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false">
+        <TextView
+            android:text="userId"
+            android:textSize="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/edit_userId"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:maxLines="2"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </EditText>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#8495EF"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="30dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false">
+        <TextView
+            android:text="password"
+            android:textSize="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:maxLines="2"
+            tools:ignore="SpeakableTextPresentCheck">
+        </EditText>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="22dp"
+            android:background="@drawable/button_drawablee"
+            android:text="Sign in"></Button>
+
+        <Button
+            android:id="@+id/btn_enroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="22dp"
+            android:background="@drawable/button_drawablee"
+            android:text="Enroll"></Button>
+    </LinearLayout>
+
+
+</LinearLayout>
