@@ -25,7 +25,7 @@ jobs:
       run: gradle wrapper
 
     - name: Grant execute permission for gradlew
-      run: chmod +x ./GitBook/gradlew
+      run: chmod +x GitBook/gradlew
 
     - name: Build with Gradle
       run: ./gradlew build
