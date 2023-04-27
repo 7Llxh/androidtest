@@ -116,7 +116,6 @@ public class EnrollActivity extends AppCompatActivity implements View.OnClickLis
                 }
             }
         });
-
     }
 
 }
